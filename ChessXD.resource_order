@@ -2,9 +2,14 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"obj_cell","order":1,"path":"objects/obj_cell/obj_cell.yy",},
+    {"name":"obj_difficulty","order":10,"path":"objects/obj_difficulty/obj_difficulty.yy",},
     {"name":"obj_grid","order":2,"path":"objects/obj_grid/obj_grid.yy",},
     {"name":"obj_gridbinds","order":5,"path":"objects/obj_gridbinds/obj_gridbinds.yy",},
+    {"name":"obj_npc_attack","order":9,"path":"objects/obj_npc_attack/obj_npc_attack.yy",},
+    {"name":"spr_cell_blue","order":7,"path":"sprites/spr_cell_blue/spr_cell_blue.yy",},
     {"name":"spr_cell_highlighted","order":4,"path":"sprites/spr_cell_highlighted/spr_cell_highlighted.yy",},
+    {"name":"spr_cell_orange","order":6,"path":"sprites/spr_cell_orange/spr_cell_orange.yy",},
+    {"name":"spr_cell_red","order":8,"path":"sprites/spr_cell_red/spr_cell_red.yy",},
     {"name":"spr_cell","order":3,"path":"sprites/spr_cell/spr_cell.yy",},
   ],
 }

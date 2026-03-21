@@ -15,6 +15,7 @@ for (var i = 0; i < 9; i++)
 	var row = i div 3;
 	var cell = instance_create_layer(left_x + col*cell_size, grid_y + row*cell_size, "Instances", obj_cell);
 	cell.key = binds.defend_keys[i];
+	cell.grid_id = 0;
 }
 
 //Attack Grid
@@ -24,4 +25,5 @@ for (var i = 0; i < 9; i++)
 	var row = i div 3;
 	var cell = instance_create_layer(right_x + col*cell_size, grid_y + row*cell_size, "Instances", obj_cell);
 	cell.key = binds.attack_keys[i];
+	cell.grid_id = 1;
 }
