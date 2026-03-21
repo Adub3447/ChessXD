@@ -7,9 +7,9 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_2CA786B5","path":"rooms/rm_battlegrids/rm_battlegrids.yy",},
-    {"name":"inst_5E8685A5","path":"rooms/rm_battlegrids/rm_battlegrids.yy",},
     {"name":"inst_44DE16E1","path":"rooms/rm_battlegrids/rm_battlegrids.yy",},
     {"name":"inst_68D2B481","path":"rooms/rm_battlegrids/rm_battlegrids.yy",},
+    {"name":"inst_5E8685A5","path":"rooms/rm_battlegrids/rm_battlegrids.yy",},
   ],
   "isDnd":false,
   "layers":[

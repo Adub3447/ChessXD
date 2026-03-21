@@ -14,6 +14,16 @@ if (phase_timer <= 0) {
         // Orange phase done, go red
         targeted_cell.sprite_index = spr_cell_red;
         attack_phase = 3;
+		phase_timer = obj_difficulty.attack_linger;
     }
     // Phase 3 (red) just waits for player to move
+	else if (attack_phase == 3) {
+    phase_timer -= delta_time / 1000000;
+    if (phase_timer <= 0) {
+        targeted_cell.targeted = false;
+        targeted_cell.sprite_index = spr_cell;
+        attack_phase = 0;
+        targeted_cell = noone;
+    }
+}
 }
