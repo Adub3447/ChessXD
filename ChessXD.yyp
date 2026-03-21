@@ -1,0 +1,37 @@
+{
+  "$GMProject":"v1",
+  "%Name":"ChessXD",
+  "AudioGroups":[
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+  "configs":{
+    "children":[],
+    "name":"Default",
+  },
+  "defaultScriptType":0,
+  "Folders":[],
+  "ForcedPrefabProjectReferences":[],
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.14.3.217",
+  },
+  "name":"ChessXD",
+  "resources":[
+    {"id":{"name":"obj_cell","path":"objects/obj_cell/obj_cell.yy",},},
+    {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},},
+    {"id":{"name":"rm_battlegrids","path":"rooms/rm_battlegrids/rm_battlegrids.yy",},},
+    {"id":{"name":"spr_cell_highlighted","path":"sprites/spr_cell_highlighted/spr_cell_highlighted.yy",},},
+    {"id":{"name":"spr_cell","path":"sprites/spr_cell/spr_cell.yy",},},
+  ],
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"rm_battlegrids","path":"rooms/rm_battlegrids/rm_battlegrids.yy",},},
+  ],
+  "templateType":"game",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+}

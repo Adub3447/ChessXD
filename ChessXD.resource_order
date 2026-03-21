@@ -1,0 +1,9 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_cell","order":1,"path":"objects/obj_cell/obj_cell.yy",},
+    {"name":"obj_grid","order":2,"path":"objects/obj_grid/obj_grid.yy",},
+    {"name":"spr_cell_highlighted","order":4,"path":"sprites/spr_cell_highlighted/spr_cell_highlighted.yy",},
+    {"name":"spr_cell","order":3,"path":"sprites/spr_cell/spr_cell.yy",},
+  ],
+}
