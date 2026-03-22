@@ -27,3 +27,5 @@ for (var i = 0; i < 9; i++)
 	cell.key = binds.attack_keys[i];
 	cell.grid_id = 1;
 }
+
+instance_create_layer(0, 0, "Instances", obj_player_token);

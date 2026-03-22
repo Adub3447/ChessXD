@@ -3,23 +3,18 @@ if (keyboard_check_pressed(key)) {
     with (obj_cell) {
         if (grid_id == my_grid && !targeted) {
             highlighted = false;
-            sprite_index = spr_cell;
         }
     }
-    highlighted = true;
-    sprite_index = spr_cell_highlighted;
-    
+	if (grid_id ==0)
+	{
+		highlighted = true;
+		obj_player_token.x = x+64;
+		obj_player_token.y = y +64;
+		obj_player_token.current_cell = id;
+	}
+	
     // If this is a defend grid cell, trigger NPC attack
     if (grid_id == 1) {
-        /* Reset previous targeted cell
-        if (obj_npc_attack.targeted_cell != noone) {
-            obj_npc_attack.targeted_cell.targeted = false;
-            obj_npc_attack.targeted_cell.sprite_index = spr_cell;
-        }
-        obj_npc_attack.attack_phase = 0;
-        obj_npc_attack.targeted_cell = noone;
-        */
-        // Pick a random defend cell to target
         var defend_cells = ds_list_create();
         with (obj_cell) {
             if (grid_id == 0) {
@@ -27,13 +22,16 @@ if (keyboard_check_pressed(key)) {
             }
         }
         var random_index = irandom(ds_list_size(defend_cells) - 1);
-        obj_npc_attack.targeted_cell = defend_cells[| random_index];
+        //obj_npc_attack.targeted_cell = defend_cells[| random_index];
+		var target = defend_cells[| random_index];
         ds_list_destroy(defend_cells);
         
-        // Start blue phase
-        obj_npc_attack.targeted_cell.targeted = true;
-        obj_npc_attack.targeted_cell.sprite_index = spr_cell_blue;
-        obj_npc_attack.attack_phase = 1;
-        obj_npc_attack.phase_timer = obj_difficulty.attack_speed / 3;
+        // Spawn a new attack cycle and hand it the target
+	    var cycle = instance_create_layer(0, 0, "Instances", obj_attack_cycle);
+	    cycle.targeted_cell = target;
+	    cycle.targeted_cell.targeted = true;
+	    cycle.targeted_cell.sprite_index = spr_cell_blue;
+	    cycle.attack_phase = 1;
+	    cycle.phase_timer = obj_difficulty.attack_speed / 3;
     }
 }
