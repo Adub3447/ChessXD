@@ -10,8 +10,8 @@
   "name":"obj_cell",
   "overriddenProperties":[],
   "parent":{
-    "name":"ChessXD",
-    "path":"ChessXD.yyp",
+    "name":"Instanced Items",
+    "path":"folders/Instanced Items.yy",
   },
   "parentObjectId":null,
   "persistent":false,

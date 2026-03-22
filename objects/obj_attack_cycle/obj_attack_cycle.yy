@@ -9,8 +9,8 @@
   "name":"obj_attack_cycle",
   "overriddenProperties":[],
   "parent":{
-    "name":"ChessXD",
-    "path":"ChessXD.yyp",
+    "name":"Settings and Managers",
+    "path":"folders/Settings and Managers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
