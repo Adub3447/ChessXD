@@ -2,12 +2,12 @@ if (keyboard_check_pressed(key)) {
     var my_grid = grid_id;
     with (obj_cell) {
         if (grid_id == my_grid && !targeted) {
-            highlighted = false;
+            has_player = false;
         }
     }
 	if (grid_id ==0)
 	{
-		highlighted = true;
+		has_player = true;
 		obj_player_token.x = x+64;
 		obj_player_token.y = y +64;
 		obj_player_token.current_cell = id;
@@ -17,12 +17,11 @@ if (keyboard_check_pressed(key)) {
     if (grid_id == 1) {
         var defend_cells = ds_list_create();
         with (obj_cell) {
-            if (grid_id == 0) {
+            if (grid_id == 0) {				//redundant check?
                 ds_list_add(defend_cells, id);
             }
         }
         var random_index = irandom(ds_list_size(defend_cells) - 1);
-        //obj_npc_attack.targeted_cell = defend_cells[| random_index];
 		var target = defend_cells[| random_index];
         ds_list_destroy(defend_cells);
         
